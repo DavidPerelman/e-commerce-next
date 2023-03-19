@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
+import Hamburger from '../UI/Hamburger/Hamburger';
 
 import classes from './NavBar.module.css';
 
@@ -54,7 +55,7 @@ const NavBar = () => {
           /> */}
           </div>
           <div className={classes.Hamburger}>
-            {/* <Hamburger showLinks={showLinks} setShowLinks={setShowLinks} /> */}
+            <Hamburger showLinks={showLinks} setShowLinks={setShowLinks} />
           </div>
         </div>
       </div>
