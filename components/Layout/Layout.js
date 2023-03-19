@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <div>
       <NavBar />
-      <main style={{ marginTop: '3rem' }}>{children}</main>
+      <main style={{ marginTop: '3.5rem' }}>{children}</main>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 import Hamburger from '../UI/Hamburger/Hamburger';
+import Icon from '../UI/Icon/Icon';
 
 import classes from './NavBar.module.css';
 
@@ -39,20 +40,20 @@ const NavBar = () => {
             /> */}
           </div>
           <div className={classes.icons}>
-            {/* <Icon
-            type={'cart-shopping'}
-            size='2xl'
-            color='white'
-            amount={cartItemsAmount}
-            onClick={showCartHandler}
-          /> */}
-            {/* <Icon
-            type={'user'}
-            size='2xl'
-            color='white'
-            isLoggedIn={isLoggedIn}
-            onClick={showUserModalHandler}
-          /> */}
+            <Icon
+              type={'cart-shopping'}
+              size='2xl'
+              color='white'
+              amount={1}
+              // onClick={showCartHandler}
+            />
+            <Icon
+              type={'user'}
+              size='2xl'
+              color='white'
+              // isLoggedIn={isLoggedIn}
+              // onClick={showUserModalHandler}
+            />
           </div>
           <div className={classes.Hamburger}>
             <Hamburger showLinks={showLinks} setShowLinks={setShowLinks} />
